@@ -5,7 +5,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Debug mode (set to False in production)
-DEBUG = True
+DEBUG = False
 
 # Allowed hosts (update this for production)
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
