@@ -1,4 +1,6 @@
-from django.http import HttpResponse
+from django.shortcuts import render
+from .models import Todo
 
-def home(request):
-    return HttpResponse("Welcome to the To-Do App!")  # A simple test response
+def todo_list(request):
+    todos = Todo.objects.all()
+    return render(request, 'todo_list.html', {'todos': todos})

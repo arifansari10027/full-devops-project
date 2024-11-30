@@ -2,5 +2,5 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.home, name='home'),  # The root view
+    path('', views.todo_list, name='todo_list'),  # Update the path if needed
 ]
